@@ -577,3 +577,49 @@ img {
     }
 
 }
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero img {
+        max-width: 220px;
+        height: auto;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .project-container,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    button,
+    .btn {
+        max-width: 100%;
+    }
+}
